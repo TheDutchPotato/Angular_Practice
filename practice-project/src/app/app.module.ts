@@ -11,6 +11,7 @@ import { ListComponent } from './list/list.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule, 
     RouterModule.forRoot([
       { path:'', component: HomeComponent },
-      { path:'todo', component: ListComponent}
+      { path:'todo', component: ListComponent},
+     
     ])
   ],
   providers: [
