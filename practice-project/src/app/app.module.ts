@@ -6,18 +6,23 @@ import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { RouterModule } from '@angular/router';
 import { ListComponent } from './list/list.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavbarComponent,
-    ListComponent
+    ListComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path:'home/', component: ListComponent }
+      { path:'', component: HomeComponent },
+      { path:'shop', component: ListComponent}
     ])
   ],
   providers: [
