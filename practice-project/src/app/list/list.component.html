@@ -1,9 +1,10 @@
 <div>
     <h2>
-        Welcome to the Practice Project Shop
+        Welcome to the Practice Project Todo List
     </h2>
-    <div>
-
+    <div *ngFor="let todo of todos">
+       
+        <h2>{{ todo.title }}</h2>
     </div>
         
     

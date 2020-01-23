@@ -1,5 +1,7 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,9 +22,10 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule, 
     RouterModule.forRoot([
       { path:'', component: HomeComponent },
-      { path:'shop', component: ListComponent}
+      { path:'todo', component: ListComponent}
     ])
   ],
   providers: [
