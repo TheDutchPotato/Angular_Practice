@@ -1,8 +1,7 @@
+import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
@@ -23,7 +22,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, 
+    HttpClientModule,
     RouterModule.forRoot([
       { path:'', component: HomeComponent },
       { path:'todo', component: ListComponent},
@@ -31,8 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     ])
   ],
   providers: [
-    
-  ],
+    DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,10 +2,8 @@
     <h2>
         Welcome to the Practice Project Todo List
     </h2>
-    <div *ngFor="let todo of todos">
-       
-        <h2>{{ todo.title }}</h2>
-        <h2>Work In Progress <i class="material">report_problem</i></h2>
+    <div *ngFor='let todo of todos$'>
+        <h4><a routerLink="[]">{{ todo.title }}</a></h4>
     </div>
         
     
